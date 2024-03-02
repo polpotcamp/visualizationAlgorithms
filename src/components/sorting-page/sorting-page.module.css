@@ -1,0 +1,26 @@
+.container{
+    width: 926px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.radio1{
+    margin-right: 40px;
+}
+.radio2{
+    margin-right: 52px;
+}
+.button1{
+    margin-right: 12px;
+}
+.button2{
+    margin-right: 60px;
+}
+.flor{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+}

@@ -1,0 +1,22 @@
+.container{
+    display:  flex;
+    justify-content: center;
+    margin: auto;
+}
+.input{
+    margin-right: 12px;
+    width: 377px;
+}
+.button1{
+    margin-right: 12px;
+}
+.button2{
+    margin-right: 80px;
+}
+.flor{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+}
