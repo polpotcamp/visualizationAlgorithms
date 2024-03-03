@@ -42,12 +42,12 @@ export const StringComponent: React.FC = () => {
   return (
     <SolutionLayout title="Строка">
       <div className={`${styles.container}`}>
-        <Input maxLength={11} isLimitText={true} extraClass={`${styles.input}`} onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setText(evt.target.value)} ></Input>
-        <Button text="Развернуть" extraClass={`${styles.button}`} onClick={() => reverseString(text)} isLoader={isLoader}></Button>
+        <Input maxLength={11} isLimitText={true} extraClass={`${styles.input}`} value={text} onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setText(evt.target.value)} ></Input>
+        <Button text="Развернуть" extraClass={`${styles.button}`} onClick={() => reverseString(text)} isLoader={isLoader} disabled={!text}></Button>
       </div>
       <div className={`${styles.letters}`}>
         {(arr.length > 0) ?
-          arr.map((element: string, i: number) => (
+          arr.map((element, i) => (
             CreatedCircles(element, i)
           ))
           : null

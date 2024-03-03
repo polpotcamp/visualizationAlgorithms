@@ -27,12 +27,12 @@ import { Circle } from "../ui/circle/circle"; export const FibonacciPage: React.
   return (
     <SolutionLayout title="Последовательность Фибоначчи">
       <div className={`${styles.container}`}>
-        <Input max={19} maxLength={2} type="num" extraClass={`${styles.input}`} isLimitText={true} onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setNum(evt.target.value)}  ></Input>
+        <Input max={19} maxLength={2} type="number" extraClass={`${styles.input}`} isLimitText={true} onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setNum(evt.target.value)}  ></Input>
         <Button text="Рассчитать" extraClass={`${styles.button}`} onClick={() => printFibonacciArr(num)} disabled={(Number(num) < 20) ? false : true} isLoader={isLoader}></Button>
       </div>
       <div className={`${styles.letters}`}>
         {(arr.length > 1) ?
-          arr.map((element: string, i: number) => (
+          arr.map((element ,i) => (
             <Circle letter={element} key={i} tail={String(i)} />
           ))
           : null

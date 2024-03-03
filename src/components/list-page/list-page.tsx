@@ -186,7 +186,7 @@ export const ListPage: React.FC = () => {
 				<Button text='Удалить из tail' onClick={delTail} disabled={list.getSize() <= 1 || disabled} isLoader={isLoader.delTail}></Button>
 			</div>
 			<div className={styles.containerBot}>
-				<Input placeholder='Введите индекс' extraClass={styles.input} value={index >= 0 ? index : ''} onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setIndex(parseInt(evt.target.value))}
+				<Input placeholder='Введите индекс' type="number" extraClass={styles.input} value={index >= 0 ? index : ''} onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setIndex(parseInt(evt.target.value))}
 					disabled={disabled} maxLength={1} max={8}></Input>
 				<Button text='Добавить по индексу' extraClass={styles.buttonBot} onClick={addIndex}
 					disabled={index < 0 || index > list.getSize() || text.length === 0 || disabled || Number.isNaN(index)}
