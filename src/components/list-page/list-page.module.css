@@ -1,0 +1,47 @@
+.container{
+    display:  flex;
+    justify-content: space-evenly;
+    margin: auto;
+    column-gap: 12px;
+    width: 952px;
+}
+.containerBot{  
+    display:  flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 12px;
+    column-gap: 12px;
+    width: 952px;
+}
+.flor{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+.circles {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-right: 16px;
+    position: relative;
+}
+
+.input{
+    width: 204px;
+}
+.buttonTop{
+    width: 175px;
+}
+.buttonBot{
+    width: 362px;
+}
+.smallTopCircle {
+	position: absolute;
+	top: -87px;
+	left: 12px;
+}
+.smallBottomCircle {
+	position: absolute;
+	top: 130px;
+	left: 12px;
+}
